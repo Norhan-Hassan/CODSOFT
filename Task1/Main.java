@@ -18,7 +18,7 @@ public class Main {
             System.out.println("Welcome..........");
             for(int i=0;i<count;i++)
             {
-                System.out.println("Enter Your Guess Number bedtween 1 to 100 : ");
+                System.out.println("Enter Your Guess Number : ");
                 guess=scanner.nextInt();
                 System.out.println("Random Number Is : ");
                 randomNumber = rand.nextInt(upperBound);

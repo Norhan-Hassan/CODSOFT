@@ -6,24 +6,24 @@ public class Checker {
 	
 	public int Check(int guess, int randomNumber,int count)
 	{
-			int win=0;
+		int win=0;
 		
-			if(guess==randomNumber)
-		    {
-		        System.out.println("Your Guess is correct!");
-		            win++;
-		        }
+		if(guess==randomNumber)
+		{
+		    System.out.println("Your Guess is correct!");
+		    win++;
+		 }
 		    
-		        else if(guess<(randomNumber+10))
-		        {
-		            System.out.println("Your Guess is Too low!");
-		        }
-		        else if(guess>(randomNumber+10))
-		        {
-		            System.out.println("Your Guess is Too Big!");
-		        }
+		else if(guess<randomNumber)
+		{
+		     System.out.println("Your Guess is Too low!");
+		}
+		else if(guess>randomNumber)
+		{
+		  System.out.println("Your Guess is Too Big!");
+		}
 				
-		    return win;
+		 return win;
 	}
 	
 	public int GetScore(int numOfRounds,int numOfWins)
