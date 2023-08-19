@@ -10,8 +10,8 @@ public class Checker {
 		
 		if(guess==randomNumber)
 		{
-		    System.out.println("Your Guess is correct!");
-		    win++;
+		     System.out.println("Your Guess is correct!");
+		     win++;
 		 }
 		    
 		else if(guess<randomNumber)
