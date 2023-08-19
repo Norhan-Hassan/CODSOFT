@@ -12,7 +12,15 @@ public class Main {
         {
             System.out.println("Enter Your Mark in subject : ");
             grade=scanner.nextDouble();
-            total+=grade;
+            if(grade<=100)
+            {
+                total+=grade;
+            }
+            else 
+            {
+                System.out.println("Enter Marks between 0 to 100");
+            }
+            
         }
 
         avg=total/numOfSub;
