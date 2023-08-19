@@ -1,6 +1,9 @@
 package Task3;
 
-public class BankAccount {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class BankAccount implements ActionListener {
 
     double balance ;
     BankAccount()
@@ -13,29 +16,34 @@ public class BankAccount {
         return balance;
     }
 
-    public void withdraw(double amount)
+    public String withdraw(double amount)
     {
         if(amount<=1000 && balance>=amount) {
             balance -= amount;
         }
         else if(amount>balance)
         {
-            System.out.println("Your balance is less than your entered amount");
+            return("Your balance is less than your entered amount");
         }
-        else if(amount>1000)
+        else
         {
-            System.out.println("Your amount is greater than 1000");
+            return("Your amount is greater than 1000");
         }
+        return ("Withdrawing Successfully");
     }
+
 
     public void deposit(double amount)
     {
         balance+=amount;
     }
-
-    public double checkBalance()
+    public String checkBalance()
     {
-        return GetBalance();
+        return (" "+GetBalance() ) ;
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
 }
